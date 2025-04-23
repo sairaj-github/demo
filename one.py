@@ -20,3 +20,17 @@ def print_fibonacci_series(terms):
 # Example usage
 n_terms = int(input("Enter the number of terms: "))
 print_fibonacci_series(n_terms)
+
+# Fibonacci series using a for loop
+def fibonacci_series_for_loop(terms):
+    if terms <= 0:
+        print("Please enter a positive integer.")
+        return
+    a, b = 0, 1
+    print("\nFibonacci series using for loop:")
+    for _ in range(terms):
+        print(a, end=" ")
+        a, b = b, a + b
+
+# Example usage
+fibonacci_series_for_loop(n_terms)
